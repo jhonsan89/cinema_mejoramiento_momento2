@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,13 +17,10 @@ namespace Cinema_JESB.Views
 		public LoginPage ()
 		{
 			InitializeComponent ();
-            CargarLogin();
+           
 		}
 
-        private async void CargarLogin()
-        {
-
-        }
+        
 
     }
 }

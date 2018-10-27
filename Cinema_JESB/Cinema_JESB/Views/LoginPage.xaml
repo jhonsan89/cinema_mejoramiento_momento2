@@ -2,11 +2,28 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Cinema_JESB.Views.LoginPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <Grid>
+        <Image Source="fondocinema.png" Aspect="AspectFill"/>
+        <BoxView Color="#000010" Opacity="0.6"/>
+
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" Source="logo.png" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30"/>
+            <StackLayout Grid.Row="1" Padding="30,20">
+                <Entry Placeholder="Usuario" PlaceholderColor="#ffffff" TextColor="#ffffff"></Entry>
+                <Entry Placeholder="Contraseña" PlaceholderColor="#ffffff" TextColor="#ffffff" IsPassword="True"></Entry>
+                <Button Text="Iniciar Sesión" BackgroundColor="#D9024D" BorderRadius="5" TextColor="#ffffff"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="¿Recuperar contraseña?" TextColor="#ffffff"/>
+                    <Label Text="Registrarse" HorizontalOptions="EndAndExpand" TextColor="#ffffff" FontAttributes="Bold"/>
+                </StackLayout>
+            </StackLayout>
+        </Grid>        
+    </Grid>
+    
 </ContentPage>
