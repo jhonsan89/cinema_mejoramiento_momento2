@@ -1,3 +1,4 @@
+using Cinema_JESB.Views;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -11,7 +12,7 @@ namespace Cinema_JESB
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			MainPage = new LoginPage();
 		}
 
 		protected override void OnStart ()
